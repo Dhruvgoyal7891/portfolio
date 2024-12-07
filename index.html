@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Goyal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>         
+<body>
+    <header>
+        <div class="container">
+            <h1>Dhruv Goyal</h1>
+            <p class="subtitle">Web Developer | Tech Enthusiast</p>
+            <img src="C:\Users\dhruv\Desktop\photo.jpg" alt="Dhruv Goyal's Photo" class="profile-photo">
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/dhruv-goyal-a02465267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="nav-link" target="_blank">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Dhruv Goyal, a passionate web developer with a deep interest in solving real-world problems using technology. Currently pursuing a B.Tech, I continuously strive to expand my skills and knowledge in the world of web development.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="C:\Users\dhruv\Downloads\webd.jpg" alt="Web Development" class="skill-icon">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and efficient websites.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="C:\Users\dhruv\Downloads\html.png" alt="HTML & CSS" class="skill-icon">
+                    <h3>HTML & CSS</h3>
+                    <p>Designing and structuring content with HTML5 and styling with CSS3.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="C:\Users\dhruv\Downloads\js.jpg" alt="JavaScript" class="skill-icon">
+                    <h3>JavaScript</h3>
+                    <p>Dynamic content creation and manipulation using JavaScript.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="C:\Users\dhruv\Downloads\responsive design.jpg" alt="Responsive Design" class="skill-icon">
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring a seamless experience across devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to connect with me, feel free to reach out!</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:dhruvgoyal385@gmail.com">dhruvgoyal385@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> Phone: <a href="tel:+917891002393">+91 7891002393</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/dhruv-goyal-a02465267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Dhruv Goyal</a></p>
+            <button class="cta-button">Get in Touch</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dhruv Goyal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JS for Smooth Scrolling -->
+    <script>
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
